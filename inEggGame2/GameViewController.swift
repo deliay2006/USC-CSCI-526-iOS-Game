@@ -54,13 +54,13 @@ class GameViewController: UIViewController {
     
     override func viewWillLayoutSubviews() {
         
-        var bgMusicURL = NSBundle.mainBundle().URLForResource("bgMusic", withExtension: "mp3")
-        var error: NSError!
+        let bgMusicURL = NSBundle.mainBundle().URLForResource("bgMusic", withExtension: "mp3")
+        let _: NSError!
         
         do {
             self.backgroundMusicPlayer = try AVAudioPlayer(contentsOfURL: bgMusicURL!)
         } catch let error1 as NSError {
-            error = error1
+            _ = error1
         }
         
         self.backgroundMusicPlayer.numberOfLoops = -1

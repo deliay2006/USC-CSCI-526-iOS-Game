@@ -78,7 +78,7 @@ class AssetViewController: UIViewController {
     
     //init movable parts
     func initTriangle(name: String,position: CGPoint)->SKSpriteNode{
-        var triangle = SKSpriteNode(imageNamed: "triangle")
+        let triangle = SKSpriteNode(imageNamed: "triangle")
         triangle.name = name
         triangle.size.width = 40
         triangle.size.height = 40
@@ -102,7 +102,7 @@ class AssetViewController: UIViewController {
     }
     
     func initDoubleTriangle(name: String, position: CGPoint)->SKSpriteNode{
-        var triangle = SKSpriteNode(imageNamed: "double_triangle")
+        let triangle = SKSpriteNode(imageNamed: "double_triangle")
         triangle.name = name
         triangle.size.width = 46
         triangle.size.height = 40
@@ -167,7 +167,7 @@ class AssetViewController: UIViewController {
     }
     
     func initSharpRock(name: String, position: CGPoint)->SKSpriteNode{
-        var sharpRock = SKSpriteNode(imageNamed: "sharprock")
+        let sharpRock = SKSpriteNode(imageNamed: "sharprock")
         sharpRock.name = name
         sharpRock.position = position
         sharpRock.size.width = 100
@@ -180,7 +180,7 @@ class AssetViewController: UIViewController {
     }
     
     func initExplode(name: String, position: CGPoint)->SKSpriteNode{
-        var explod = SKSpriteNode(imageNamed: "hedgehog")
+        let explod = SKSpriteNode(imageNamed: "hedgehog")
         explod.name = name
         explod.position = position
         explod.size.width = 70
@@ -193,7 +193,7 @@ class AssetViewController: UIViewController {
     }
     
     func initWind(name: String, position: CGPoint) -> SKSpriteNode {
-        var blower = SKSpriteNode(imageNamed: "wind_blower_right")
+        let blower = SKSpriteNode(imageNamed: "wind_blower_right")
         blower.name = name
         blower.size.width = 50
         blower.size.height = 50
